@@ -43,7 +43,6 @@ for pacote in pacotes_removidos_l:
     item += 1
     list_pacotes_removido += pacote
     count += 1
-
     item1 = 0
 
 # separando pacotes atualizados por palavra a partir do '.'
@@ -65,6 +64,7 @@ for pacotex in list_pacotes_novo:
     if pacotex in list_pacotes_removido:
         list_pacotes_atualizado += [pacotex]
         count += 1
+
 print(count)
 
 # filtrando lista dos pacotes atualizados
@@ -91,7 +91,6 @@ for pac in list_pacotes_atualizado_filt_ok_f:
         if pac in pacx:
             pacotes_removido_antigo += [pacx]
 
-
 print(pacotes_removido_antigo, len(pacotes_removido_antigo))
 
 # buscando os pacotes atualizados da lista de pacotes novos
@@ -104,7 +103,6 @@ for pacn in list_pacotes_atualizado_filt_ok_f:
             pacotes_atualizados += [pacy]
 
 print(pacotes_atualizados, len(pacotes_atualizados))
-
 
 # ordenando as listas dos pacotes de atualização
 
